@@ -317,7 +317,7 @@ const Index = () => {
                     <Icon name="Phone" size={32} className="mr-4 text-primary" />
                     <div>
                       <p className="font-semibold">Телефон</p>
-                      <p className="text-lg">+7 (999) 123-45-67</p>
+                      <p className="text-lg">+7 (904) 099-26-73</p>
                     </div>
                   </div>
                   <div className="flex items-center p-4 bg-muted rounded-lg">
