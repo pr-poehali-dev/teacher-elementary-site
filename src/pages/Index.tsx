@@ -34,7 +34,7 @@ const Index = () => {
   ];
 
   const materials = [
-    { title: 'Математика 2 класс', desc: 'Таблица умножения', icon: 'Calculator' },
+    { title: 'Математика 4 класс', desc: 'Таблица умножения и деления', icon: 'Calculator' },
     { title: 'Русский язык', desc: 'Словарные слова', icon: 'BookText' },
     { title: 'Чтение', desc: 'Список литературы', icon: 'Book' },
   ];
@@ -51,7 +51,7 @@ const Index = () => {
       <nav className="bg-white shadow-md sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between mb-4">
-            <h1 className="text-3xl font-bold text-primary">🌟 Мой класс</h1>
+            <h1 className="text-3xl font-bold text-primary">🌟 4В класс</h1>
           </div>
           <div className="flex flex-wrap gap-2 justify-center">
             {navItems.map((item) => (
@@ -85,11 +85,11 @@ const Index = () => {
                       Добро пожаловать! 👋
                     </h2>
                     <p className="text-xl text-accent-foreground mb-2">
-                      Здравствуйте, дорогие ученики и родители!
+                      Здравствуйте, дорогие ученики и родители 4В класса!
                     </p>
                     <p className="text-lg text-accent-foreground/80">
-                      Я рада приветствовать вас на сайте нашего класса. Здесь вы найдете расписание
-                      уроков, домашние задания, полезные материалы и многое другое!
+                      Меня зовут Образцова Эвелина Игоревна. Я рада приветствовать вас на сайте нашего класса. 
+                      Здесь вы найдете расписание уроков, домашние задания, полезные материалы и многое другое!
                     </p>
                   </div>
                 </div>
@@ -161,7 +161,7 @@ const Index = () => {
                 <h2 className="text-3xl font-bold mb-6 text-primary">Обо мне</h2>
                 <div className="prose max-w-none">
                   <p className="text-lg mb-4">
-                    Меня зовут Мария Ивановна. Я учитель начальных классов с 15-летним стажем работы.
+                    Меня зовут Образцова Эвелина Игоревна. Я учитель начальных классов 4В класса в МБОУ СОШ №36 города Белгорода.
                   </p>
                   <p className="text-lg mb-4">
                     Моя цель — сделать обучение увлекательным и интересным для каждого ребенка. Я верю,
@@ -263,7 +263,7 @@ const Index = () => {
                     <ul className="space-y-2 text-lg">
                       <li>📚 Уроки начинаются в 8:30</li>
                       <li>🍎 Перемены: 10 минут после каждого урока</li>
-                      <li>🏫 Классный кабинет: №205</li>
+                      <li>🏫 МБОУ СОШ №36, г. Белгород</li>
                       <li>📞 Часы приема: Вторник 16:00-18:00</li>
                     </ul>
                   </div>
@@ -324,7 +324,7 @@ const Index = () => {
                     <Icon name="MapPin" size={32} className="mr-4 text-primary" />
                     <div>
                       <p className="font-semibold">Адрес</p>
-                      <p className="text-lg">Школа №1, кабинет 205</p>
+                      <p className="text-lg">МБОУ СОШ №36, г. Белгород</p>
                     </div>
                   </div>
                 </div>
@@ -336,7 +336,7 @@ const Index = () => {
 
       <footer className="bg-primary text-primary-foreground mt-16 py-8">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-lg">© 2024 Мой класс. Сделано с ❤️ для учеников и родителей</p>
+          <p className="text-lg">© 2024 4В класс МБОУ СОШ №36. Сделано с ❤️ для учеников и родителей</p>
         </div>
       </footer>
     </div>
