@@ -19,13 +19,7 @@ const Index = () => {
     { id: 'contacts', label: 'Контакты', icon: 'Mail' },
   ];
 
-  const schedule = [
-    { day: 'Понедельник', lessons: ['Математика', 'Русский язык', 'Чтение', 'Физкультура'] },
-    { day: 'Вторник', lessons: ['Математика', 'Окружающий мир', 'ИЗО', 'Музыка'] },
-    { day: 'Среда', lessons: ['Математика', 'Русский язык', 'Чтение', 'Технология'] },
-    { day: 'Четверг', lessons: ['Математика', 'Русский язык', 'Английский', 'Физкультура'] },
-    { day: 'Пятница', lessons: ['Математика', 'Чтение', 'Окружающий мир', 'Классный час'] },
-  ];
+
 
   const importantDates = [
     { date: '20 декабря', event: 'Новогодний утренник' },
@@ -96,34 +90,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <div className="grid md:grid-cols-2 gap-6">
-              <Card className="shadow-lg hover:shadow-xl transition-shadow">
-                <CardContent className="p-6">
-                  <h3 className="text-2xl font-bold mb-4 flex items-center text-primary">
-                    <Icon name="Calendar" className="mr-2" />
-                    Расписание уроков
-                  </h3>
-                  <div className="space-y-4">
-                    {schedule.map((day) => (
-                      <div
-                        key={day.day}
-                        className="p-4 bg-muted rounded-lg hover:bg-secondary transition-colors"
-                      >
-                        <h4 className="font-semibold text-lg mb-2">{day.day}</h4>
-                        <div className="flex flex-wrap gap-2">
-                          {day.lessons.map((lesson, idx) => (
-                            <Badge key={idx} variant="secondary" className="text-sm">
-                              {idx + 1}. {lesson}
-                            </Badge>
-                          ))}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="shadow-lg hover:shadow-xl transition-shadow">
+            <Card className="shadow-lg hover:shadow-xl transition-shadow max-w-2xl mx-auto">
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-bold mb-4 flex items-center text-primary">
                     <Icon name="Bell" className="mr-2" />
