@@ -13,7 +13,7 @@ const Index = () => {
     { id: 'home', label: 'Главная', icon: 'Home' },
     { id: 'about', label: 'Обо мне', icon: 'User' },
     { id: 'materials', label: 'Материалы', icon: 'BookOpen' },
-    { id: 'homework', label: 'Задания', icon: 'PenTool' },
+    { id: 'vpr', label: 'ВПР Подготовка', icon: 'GraduationCap' },
     { id: 'parents', label: 'Родителям', icon: 'Users' },
     { id: 'gallery', label: 'Галерея', icon: 'Image' },
     { id: 'contacts', label: 'Контакты', icon: 'Mail' },
@@ -221,36 +221,149 @@ const Index = () => {
           </div>
         )}
 
-        {activeSection === 'homework' && (
+        {activeSection === 'vpr' && (
           <div className="animate-fade-in">
             <Card className="shadow-lg">
               <CardContent className="p-8">
                 <h2 className="text-3xl font-bold mb-6 text-primary flex items-center">
-                  <Icon name="PenTool" className="mr-3" />
-                  Домашние задания
+                  <Icon name="GraduationCap" className="mr-3" />
+                  ВПР Подготовка
                 </h2>
-                <div className="space-y-4">
-                  <div className="p-6 bg-accent rounded-lg border-l-4 border-primary">
-                    <div className="flex items-center justify-between mb-2">
-                      <h3 className="text-xl font-bold">Математика</h3>
-                      <Badge variant="destructive">До 18.12</Badge>
-                    </div>
-                    <p className="text-lg">Учебник: стр. 45, №3-7. Рабочая тетрадь: стр. 22-23</p>
-                  </div>
-                  <div className="p-6 bg-secondary rounded-lg border-l-4 border-primary">
-                    <div className="flex items-center justify-between mb-2">
-                      <h3 className="text-xl font-bold">Русский язык</h3>
-                      <Badge variant="destructive">До 19.12</Badge>
-                    </div>
-                    <p className="text-lg">Упражнения 56, 57. Выучить правило на стр. 89</p>
-                  </div>
-                  <div className="p-6 bg-muted rounded-lg border-l-4 border-primary">
-                    <div className="flex items-center justify-between mb-2">
-                      <h3 className="text-xl font-bold">Чтение</h3>
-                      <Badge>До 20.12</Badge>
-                    </div>
-                    <p className="text-lg">Прочитать рассказ "Волшебное слово", стр. 102-106</p>
-                  </div>
+                <p className="text-lg mb-6 text-muted-foreground">
+                  Полезные материалы и памятки для успешной подготовки к Всероссийским проверочным работам
+                </p>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <Card className="shadow-md hover:shadow-lg transition-all border-l-4 border-primary">
+                    <CardContent className="p-6">
+                      <div className="flex items-center mb-4">
+                        <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                          <Icon name="Calculator" size={24} className="text-primary" />
+                        </div>
+                        <h3 className="text-xl font-bold">Математика</h3>
+                      </div>
+                      <ul className="space-y-2 text-lg">
+                        <li className="flex items-start">
+                          <Icon name="CheckCircle" size={20} className="mr-2 mt-1 text-primary flex-shrink-0" />
+                          <span>Таблица умножения и деления</span>
+                        </li>
+                        <li className="flex items-start">
+                          <Icon name="CheckCircle" size={20} className="mr-2 mt-1 text-primary flex-shrink-0" />
+                          <span>Решение задач на движение</span>
+                        </li>
+                        <li className="flex items-start">
+                          <Icon name="CheckCircle" size={20} className="mr-2 mt-1 text-primary flex-shrink-0" />
+                          <span>Геометрические фигуры</span>
+                        </li>
+                        <li className="flex items-start">
+                          <Icon name="CheckCircle" size={20} className="mr-2 mt-1 text-primary flex-shrink-0" />
+                          <span>Единицы измерения</span>
+                        </li>
+                      </ul>
+                      <Button className="w-full mt-4">
+                        <Icon name="Download" className="mr-2" size={16} />
+                        Скачать памятку
+                      </Button>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="shadow-md hover:shadow-lg transition-all border-l-4 border-primary">
+                    <CardContent className="p-6">
+                      <div className="flex items-center mb-4">
+                        <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                          <Icon name="BookText" size={24} className="text-primary" />
+                        </div>
+                        <h3 className="text-xl font-bold">Русский язык</h3>
+                      </div>
+                      <ul className="space-y-2 text-lg">
+                        <li className="flex items-start">
+                          <Icon name="CheckCircle" size={20} className="mr-2 mt-1 text-primary flex-shrink-0" />
+                          <span>Части речи и члены предложения</span>
+                        </li>
+                        <li className="flex items-start">
+                          <Icon name="CheckCircle" size={20} className="mr-2 mt-1 text-primary flex-shrink-0" />
+                          <span>Правописание безударных гласных</span>
+                        </li>
+                        <li className="flex items-start">
+                          <Icon name="CheckCircle" size={20} className="mr-2 mt-1 text-primary flex-shrink-0" />
+                          <span>Словарные слова</span>
+                        </li>
+                        <li className="flex items-start">
+                          <Icon name="CheckCircle" size={20} className="mr-2 mt-1 text-primary flex-shrink-0" />
+                          <span>Работа с текстом</span>
+                        </li>
+                      </ul>
+                      <Button className="w-full mt-4">
+                        <Icon name="Download" className="mr-2" size={16} />
+                        Скачать памятку
+                      </Button>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="shadow-md hover:shadow-lg transition-all border-l-4 border-primary">
+                    <CardContent className="p-6">
+                      <div className="flex items-center mb-4">
+                        <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                          <Icon name="Globe" size={24} className="text-primary" />
+                        </div>
+                        <h3 className="text-xl font-bold">Окружающий мир</h3>
+                      </div>
+                      <ul className="space-y-2 text-lg">
+                        <li className="flex items-start">
+                          <Icon name="CheckCircle" size={20} className="mr-2 mt-1 text-primary flex-shrink-0" />
+                          <span>Природные зоны России</span>
+                        </li>
+                        <li className="flex items-start">
+                          <Icon name="CheckCircle" size={20} className="mr-2 mt-1 text-primary flex-shrink-0" />
+                          <span>Организм человека</span>
+                        </li>
+                        <li className="flex items-start">
+                          <Icon name="CheckCircle" size={20} className="mr-2 mt-1 text-primary flex-shrink-0" />
+                          <span>История России</span>
+                        </li>
+                        <li className="flex items-start">
+                          <Icon name="CheckCircle" size={20} className="mr-2 mt-1 text-primary flex-shrink-0" />
+                          <span>Экология и охрана природы</span>
+                        </li>
+                      </ul>
+                      <Button className="w-full mt-4">
+                        <Icon name="Download" className="mr-2" size={16} />
+                        Скачать памятку
+                      </Button>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="shadow-md hover:shadow-lg transition-all border-l-4 border-primary">
+                    <CardContent className="p-6">
+                      <div className="flex items-center mb-4">
+                        <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                          <Icon name="Lightbulb" size={24} className="text-primary" />
+                        </div>
+                        <h3 className="text-xl font-bold">Общие рекомендации</h3>
+                      </div>
+                      <ul className="space-y-2 text-lg">
+                        <li className="flex items-start">
+                          <Icon name="CheckCircle" size={20} className="mr-2 mt-1 text-primary flex-shrink-0" />
+                          <span>Режим подготовки к ВПР</span>
+                        </li>
+                        <li className="flex items-start">
+                          <Icon name="CheckCircle" size={20} className="mr-2 mt-1 text-primary flex-shrink-0" />
+                          <span>Как правильно оформлять работу</span>
+                        </li>
+                        <li className="flex items-start">
+                          <Icon name="CheckCircle" size={20} className="mr-2 mt-1 text-primary flex-shrink-0" />
+                          <span>Советы по распределению времени</span>
+                        </li>
+                        <li className="flex items-start">
+                          <Icon name="CheckCircle" size={20} className="mr-2 mt-1 text-primary flex-shrink-0" />
+                          <span>Психологическая подготовка</span>
+                        </li>
+                      </ul>
+                      <Button className="w-full mt-4">
+                        <Icon name="Download" className="mr-2" size={16} />
+                        Скачать памятку
+                      </Button>
+                    </CardContent>
+                  </Card>
                 </div>
               </CardContent>
             </Card>
